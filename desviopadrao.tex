@@ -55,85 +55,44 @@
 	
 	\vspace{2cm}
 	
-	\section*{Produto Vetorial}
+	\section*{Desvio Padrão}
 	
-	O produto vetorial de $\vec{u}$ por $\vec{v}$, (denotado por $\vec{u}\wedge\vec{v}$ ou $\vec{u}\times\vec{v} $) é um vetor, no qual possui as seguintes propriedades:\\
-	
-	\begin{center}
-		\vspace{0.2cm}
-		\begin{tabular}{|c|}
-			\hline
-			\textit{\textbf{Propriedades:}} \\
-			1) Se $(\vec{u}, \vec{v})$ é linearmente dependente, então $\vec{u}\wedge\vec{v}=\vec{0}$;\\
-			2) Se $(\vec{u}, \vec{v})$ é linearmente independente e $\theta$ é a medida angular entre $\vec{u}$ e $\vec{v}$, então:\\
-			
-			2.1) $||\vec{u}\wedge\vec{v}|| = ||\vec{u}|| ||\vec{v}|| sen\theta $; \\
-			2.2)$\vec{u}\wedge\vec{v}$ é ortogonal a $\vec{u}$ e $\vec{v}$;\\
-			
-			2.3)$(\vec{u}, \vec{v}, \vec{u}\wedge\vec{v} )$ é uma base positiva.	\\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	
-	O produto vetorial possui algumas propriedades algébricas, tais como:
+	O desvio padrão é uma medida de dispersão (medidas de dispersão, são medidas estatísticas que indicam o grau de dispersão, ou variabilidade do conjunto de 
+	observações pesquisados, em relação a uma medida de posição) que indica o quanto o conjunto de dados é uniforme, ele é definido como a raiz quadrada da variância
+	e representado por:\\
 	
 	\begin{center}
 		\vspace{0.2cm}
 		\begin{tabular}{|c|}
 			\hline
-			\textit{\textbf{Propriedades Algébricas:}} \\
-			1)$\vec{u}\wedge\vec{v} = - \vec{u}\wedge\vec{v} $;\\
-			2)$\vec{u}\wedge(\lambda\vec{u})\wedge\vec{v} = \lambda(\vec{u}\wedge\vec{v})$;\\
-			3)$\vec{u}\wedge(\vec{v} + \vec{w}) = \vec{u}\wedge\vec{v} + \vec{u}\wedge{w}$\\
+			\textit{\textbf{Amostral:}} \\
+			$s= \sqrt{s^2}$\\
 			\hline
 		\end{tabular}
 	\end{center}
 	
-	Tem-se que para quaisquer vetores $\vec{u},\vec{v}$ e $\vec{w}$, as igualdades:\\
-	
+
 	\begin{center}
 		\begin{tabular}{|c|}
 			\hline
-			\textit{\textbf{Igualdades:}} \\
-			1)$(\vec{u}\wedge\vec{v})\wedge\vec{w} = -(\vec{v}\bullet\vec{w})\vec{u}$;\\
-			2)$\vec{u}\wedge(\vec{v}\wedge\vec{w})\vec{v} = - (\vec{u}\bullet\vec{}v)\vec{w}$.\\
+			\textit{\textbf{Populacional:}} \\
+			$	\sigma= \sqrt{\sigma^2}$;\\
 			\hline
 		\end{tabular}
 	\end{center}
 	
-	\section*{Produto Vetorial no R:}
+	\section*{Utlizando Desvio Padrão no R:}
 	
-	Para facilitar, você pode copiar as áreas em azul e verde, colar no R e substituir as
-	verdes pelas informações que você tem, como a função, o ponto, o intervalo etc.\\
-	\newline
-	$\bullet$ Para calcular o \textbf{produto vetorial} devemos:
-	
-    	
-    {
-    	
-    	\begin{Verbatim}[commandchars=\\\{\}]
-    		
-\textcolor{blue}{> install.packages(RSEIS)} #instalar o pacote RSEIS.
-\textcolor{blue}{> library(RSEIS)}          #carregar a biblioteca.
-\textcolor{blue}{> xprod}\textcolor{green}{(u,v)}              #função que calcula o produto vetorial.
-    	\end{Verbatim}
-    }
- 
+	Para calcular o desvio padrão no R, devemos utilizar a função \textbf{sd}. Essa função faz parte do pacote \textbf{stats} e já está instalado de forma nativa no R.\\
+
 	\subsection*{Exemplo 1:}
-	
-	Considere a base ortonormal positiva B = $(\vec{i}, \vec{j}, \vec{k})$, são dados $\vec{u} = (1,2,3)$ e $\vec{v} = (-1,1,2). $
-	\\
-	\\	
-	Com o auxílio da linguagem R, obtemos:
-	
+
 	\begin{verbatim}
-		> library(RSEIS)
-		> vetoru <- c(1,2,3)
-		> vetorv <- c(-1, 1, 2)
-		# Utilizando o comando xprod, calculamos o produto vetorial:
-		> xprod(vetoru,vetorv)
-		[1]  1 -5  3
+		> library(stats)
+		> x <- c(1, 2.5, 7, 5, 10)
+		# Calculamos o desvio padrão através da função sd do pacote Stats
+		> sd(x)
+		[1]  3.577709
 	\end{verbatim}
 	Portanto, tem-se que o produto vetorial de $\vec{u}$ e $\vec{v}$ é o vetor (1,-5,3).\\
 	
