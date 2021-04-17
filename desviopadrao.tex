@@ -59,45 +59,38 @@
 	
 	O desvio padrão é uma medida de dispersão (medidas de dispersão, são medidas  que indicam o grau de dispersão, ou variabilidade do conjunto de  observações pesquisados, em relação a uma medida de posição) que indica o quanto o conjunto de dados é uniforme, ele é definido como a raiz quadrada da variância e é representado por:\\
 	
-	\begin{center}
+	\begin{center}									
 		\vspace{0.2cm}
-		\begin{tabular}{|c|}
+		\begin{tabular}{|c||c|}
 			\hline
-			\textit{\textbf{Amostral:}} \\
-			$s= \sqrt{s^2}$\\
+			\textit{\textbf{Amostral:}} & \textbf{Populacional:} \\
+			$s= \sqrt{s^2}$             &  $	\sigma= \sqrt{\sigma^2}$; \\
 			\hline
 		\end{tabular}
 	\end{center}
-	
 
-	\begin{center}
-		\begin{tabular}{|c|}
-			\hline
-			\textit{\textbf{Populacional:}} \\
-			$	\sigma= \sqrt{\sigma^2}$;\\
-			\hline
-		\end{tabular}
-	\end{center}
+	
 	
 	\section*{Utlizando Desvio Padrão no R:}
 	
 	Para calcular o desvio padrão no R, podemos utilizar a função \textbf{sd}. Essa função faz parte do pacote \textbf{stats} e já está instalado de forma nativa no R.\\
 	Uma outra forma de se calcular o desvio padrão é aplicando a função da raiz quadrada. \\
 
-	\subsection*{Exemplo 1: Função sd}
+
+	\subsection*{Exemplo 1: Função sd para o conjunto de dados \c(1, 2.5, 7, 5, 10)}
 
 	\begin{verbatim}
 		> library(stats)
-		> x <- c(1, 2.5, 7, 5, 10)
+		> x <- c(1, 2.5, 7, 5, 10) #Conjunto de dados aleatórios
 		# Calculando o desvio padrão através da função sd do pacote Stats
 		> sd(x)
 		[1]  3.577709 # Resultado do desvio padrão
 	\end{verbatim}
 	
-	\subsection*{Exemplo 2: Raiz da Variância}
+	\subsection*{Exemplo 2: Raiz da Variância, utlizando a função nativa variância}
 	
 	\begin{verbatim}
-		> x <- c(1, 2.5, 7, 5, 10)
+		> x <- c(1, 2.5, 7, 5, 10) #Conjunto de dados aleatórios
 		# Calculando através da raiz de variância
 		> sqrt(var(x))
 		[1]  3.577709 # Resultado do desvio padrão
