@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1618657844 "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.tex" "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.pdf" "desviopadrao" 1618657846
-  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.aux" 1618657846 198 7becf6b3a80536cd73df837f039e7f2d ""
-  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.tex" 1618657841 3405 9fcede71f4a263eff04de16f270bc8b3 ""
+["pdflatex"] 1618658792 "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.tex" "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.pdf" "desviopadrao" 1618658794
+  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.aux" 1618658794 226 ff6dd16bf342710bcdb46de0de920e53 ""
+  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.tex" 1618658789 3465 45184712d9d3a4cb7db8bf0a0951469a ""
   "c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1618579292 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1618580541 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbi1200.tfm" 1618580005 3072 ccae1a240ab272417e4399fe942df546 ""
@@ -198,12 +198,12 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1618585245 5217717 b43fe545f048dd66fa410792f18dfeaf ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1618585389 2724595 0e8e6cc27d91aa75c12ab013a1e1c149 ""
   "c:/texlive/2021/texmf.cnf" 1618585221 713 e69b156964470283e0530f5060668171 ""
-  "desviopadrao.aux" 1618657846 198 7becf6b3a80536cd73df837f039e7f2d "pdflatex"
-  "desviopadrao.tex" 1618657841 3405 9fcede71f4a263eff04de16f270bc8b3 ""
+  "desviopadrao.aux" 1618658794 226 ff6dd16bf342710bcdb46de0de920e53 "pdflatex"
+  "desviopadrao.tex" 1618658789 3465 45184712d9d3a4cb7db8bf0a0951469a ""
   "logo.jpg" 1609864486 36403 8e256b854a0ccb9139fce52098e9d264 ""
   (generated)
-  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.log"
   "desviopadrao.pdf"
   "desviopadrao.aux"
   "desviopadrao.log"
   "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.pdf"
+  "c:/Users/lucas-stefano/Documents/desvio-padrao/desviopadrao.log"
